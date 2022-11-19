@@ -1,0 +1,13 @@
+11/19/2022 05:36:11 PM MONEY FED:		$0.0 $10.0
+11/19/2022 05:36:13 PM MONEY FED:		$10.0 $110.0
+11/19/2022 05:36:17 PM Preengles	D2	$110.0 $107.65
+11/19/2022 05:36:19 PM CHANGE GIVEN		$107.65 $0.00
+11/19/2022 06:05:44 PM Vending Machine Restocking
+11/19/2022 06:05:44 PM Vending Machine On
+11/19/2022 06:05:54 PM Vending Machine On
+11/19/2022 06:05:57 PM Shutting Down Vending Machine
+11/19/2022 06:06:31 PM Vending Machine Restocking
+11/19/2022 06:06:31 PM Vending Machine On
+11/19/2022 06:06:34 PM MONEY FED:		$0.0 $10.0
+11/19/2022 06:06:37 PM CHANGE GIVEN		$10.0 $0.00
+11/19/2022 06:06:39 PM Shutting Down Vending Machine
