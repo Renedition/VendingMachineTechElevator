@@ -18,9 +18,5 @@ public class VendingMachineTest {
         Assert.assertTrue(tempFile.exists());
         Assert.assertTrue(tempFile.isFile());
     }
-    @Test
-    public void roundMoney(){
-        double expected = vendingMachine.roundingMoney(5.51);
-        Assert.assertEquals(5.51,expected,0.00009);
-    }
+
 }

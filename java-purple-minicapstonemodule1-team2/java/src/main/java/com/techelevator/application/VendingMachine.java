@@ -2,25 +2,26 @@ package com.techelevator.application;
 
 import com.techelevator.ui.UserInput;
 import com.techelevator.ui.UserOutput;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.PrintWriter;
-import java.math.BigDecimal;
-import java.math.RoundingMode;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
-import static com.techelevator.models.Item.*;
-import static com.techelevator.ui.UserInput.addMoney;
+import static com.techelevator.models.Item.getMap;
+import static com.techelevator.models.Item.productMap;
+import static com.techelevator.models.Money.addMoney;
 import static com.techelevator.ui.UserInput.itemAvailable;
 import static com.techelevator.ui.UserOutput.*;
+
 
 public class VendingMachine {
     static File audit = new File("Audit.txt");
 
     public void run() {
-        getMap("catering1.csv");
+        getMap("catering.csv");
         runAudit("Vending Machine Restocking");
         runAudit("Vending Machine On");
         while (true) {
@@ -51,10 +52,6 @@ public class VendingMachine {
         }
     }
 
-    public static double roundingMoney(double cash) {
-        BigDecimal moneyTemp = new BigDecimal(cash).setScale(2, RoundingMode.HALF_UP);
-        return moneyTemp.doubleValue();
-    }
 
     public static void runAudit(String message) {
         String time = LocalDateTime.now().format(DateTimeFormatter.ofPattern("M/d/y hh:mm:ss a"));

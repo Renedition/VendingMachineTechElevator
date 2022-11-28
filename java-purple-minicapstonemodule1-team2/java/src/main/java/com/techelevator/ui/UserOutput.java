@@ -1,16 +1,11 @@
 package com.techelevator.ui;
 
-import com.techelevator.models.Item;
+import com.techelevator.models.*;
 
-import java.math.BigDecimal;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
 import java.util.Map;
 
 import static com.techelevator.application.VendingMachine.runAudit;
-import static com.techelevator.ui.UserInput.money;
-import static com.techelevator.ui.UserInput.previousMoney;
+import static com.techelevator.models.Money.money;
 
 
 /**
@@ -91,20 +86,16 @@ public class UserOutput
         System.out.println("Money Remaining: " + money);
         switch (map.getKey().getType()) {
             case "Munchy":
-                System.out.println("Munchy, Munchy, so Good!");
-                System.out.println();
+                Munchy.getMessage();
                 break;
             case "Drink":
-                System.out.println("Drinky, Drinky, Slurp Slurp!");
-                System.out.println();
+                Drink.getMessage();
                 break;
             case "Gum":
-                System.out.println("Chewy, Chewy, Lots O Bubbles!");
-                System.out.println();
+                Gum.getMessage();
                 break;
             case "Candy":
-                System.out.println("Sugar, Sugar, so Sweet!");
-                System.out.println();
+                Candy.getMessage();
                 break;
         }
         } catch (Exception e){

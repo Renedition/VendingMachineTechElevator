@@ -10,7 +10,7 @@ public class ItemTest {
     private Item item;
     @Before
     public void setup(){
-        this.item = new Item("A1","U-Chews",1.65,"Gum");
+        item = new Item("A1","U-Chews",1.65,"Gum") {};
     }
     @Test
     public void getSlotTest(){
